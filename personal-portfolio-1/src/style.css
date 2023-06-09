@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins:wght@300&family=Roboto&family=Source+Code+Pro&display=swap');
+
+*
+{
+    font-family: 'Fredoka';
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.hero
+{   
+    width: 100%;
+    height: 100vh;
+    background: url('img/bg-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.navigation .menu-icon
+{
+    display: none;
+}
+.navigation .logo
+{
+    color: #98d1b7bb;
+    font-size: 40px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.navigation .logo span
+{
+    color: #fff;
+}
+
+.navigation
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 2%;
+    padding-right: 2%;
+    background: transparent;
+}
+
+.navigation ul li
+{
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.navigation ul li a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.tour-button
+{
+    padding: 10px 20px;
+    background: transparent;
+    color: white;
+    outline: none;
+    border: 1px solid #ffffff23;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.tour-button:hover
+{
+    scale: 1.1;
+    background: #fdfdfd27;
+}
+
+footer{
+    color: rgba(185, 185, 185, 0.925);
+    position: absolute;
+    bottom: 0;
+}
+
+.content-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.content-container .content
+{
+    height: 400px;
+    width: 500px;
+    background: transparent;
+    backdrop-filter: blur(4px);
+    border: 1px #49f62683 solid;
+    border-radius: 20px;
+}
+
+.content-container .content .text-elements
+{
+    line-height: 50px;
+    text-align: center;
+    padding: 40px;
+    letter-spacing: 1px;
+}
+
+.content-container .content .text-elements h1
+{
+    font-size: 40px;
+    color: #4AF626;
+    font-family: 'Source Code Pro';
+}
+
+.content-container .content .text-elements h1 span
+{
+    color: red;
+    font-family: 'Source Code Pro';
+}
+
+.content-container .content .text-elements p
+{
+    font-size: 20px;
+    color: #ebebeb;
+}
+
+.content-container .content .text-elements button
+{
+    margin-top: 30px;
+    user-select: none;
+}
+
+/*--responsive--*/
+
+@media (max-width:900px)
+{
+    .navigation ul li 
+    {
+       display:none;
+    }
+
+    
+}
+
+@media (max-width:700px)
+{
+    .hero
+    {
+        width: 100%;
+        height: 100vh;
+        background: url('img/bg-mobile.jpg');
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+}
